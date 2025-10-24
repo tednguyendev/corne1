@@ -34,9 +34,9 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none     &kp BACKSLASH     &kp LBRC          &kp RBRC          &none              &none  &none
-&none  &none  &none  &none  &none  &none     &kp LS(LA(LEFT))  &kp MINUS         &kp PLUS          &kp LS(LA(RIGHT))  &none  &none
-&none  &none  &none  &none  &none  &none     &kp EQUAL         &kp LS(BACKSLASH) &kp LS(LBRC)      &kp LS(RBRC)       &none  &none
+&none  &none  &none  &none  &none  &none     &kp STAR          &kp BACKSLASH     &kp LBRC          &kp RBRC          &none  &none
+&none  &none  &none  &none  &none  &none     &kp LS(LA(LEFT))  &kp MINUS         &kp PLUS          &kp LS(LA(RIGHT)) &none  &none
+&none  &none  &none  &none  &none  &none     &kp EQUAL         &kp LS(BACKSLASH) &kp LS(LBRC)      &kp LS(RBRC)      &none  &none
                      &none  &none  &trans    &trans            &none             &none
             >;
         };
