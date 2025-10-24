@@ -14,5 +14,32 @@
             >;
         };
 
+        layer_1 {
+            bindings = <
+&none  &none  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none          &kp LS(TAB)  &kp HASH  &kp AT  &kp TAB    &none      &none
+&none  &none  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none          &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp UNDER  &none
+&none  &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none          &kp GRAVE    &kp LT    &kp GT  &none      &none      &none
+                         &none      &kp KP_N0  &kp LG(RET)    &none        &none     &none
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&none          &none          &kp LS(LG(P))   &kp LS(LG(E))  &kp LS(LG(O))   &kp LG(T)         &kp EXCL      &kp SQT    &kp DQT    &kp QMARK      &none      &none
+&kp LS(LG(I))  &kp LS(LG(X))  &kp LS(LG(Q))   &kp LS(LG(S))  &kp LS(LG(A))   &kp LS(LG(N0))    &kp LA(LEFT)  &kp LA(J)  &kp LA(K)  &kp LA(RIGHT)  &kp UNDER  &none
+&none          &kp LS(LG(Y))  &kp LS(LG(N1))  &kp LS(LG(C))  &kp LS(LG(N3))  &kp LS(LG(N4))    &kp GRAVE     &none      &none      &none          &none      &none
+                                              &none          &none           &none             &trans        &none      &none
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&none  &none  &none  &none  &none  &none     &kp STAR          &kp BACKSLASH     &kp LBRC          &kp RBRC          &none  &none
+&none  &none  &kp DOLLAR  &kp PERCENT  &kp CARET  &none     &kp LS(LA(LEFT))  &kp MINUS         &kp PLUS          &kp LS(LA(RIGHT)) &none  &none
+&none  &none  &kp LC(M)  &kp LC(M)  &kp LC(Q)  &none     &kp EQUAL         &kp LS(BACKSLASH) &kp LS(LBRC)      &kp LS(RBRC)      &none  &none
+                     &none  &none  &trans    &trans            &none             &none
+            >;
+        };
+
     };
 };
