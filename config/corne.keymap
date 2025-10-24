@@ -7,9 +7,9 @@
 
         default_layer {
             bindings = <
-&caps_word  &none   &kp W  &kp E      &kp R         &kp T            &kp Y        &kp U       &kp I    &kp O  &none     &none
-&lt 3 Z     &kp A   &kp S  &kp D      &kp F         &kp G            &kp H        &kp J       &kp K    &kp L  &kp SEMI  &kp LSHFT
-&none       &gresc  &kp X  &kp C      &kp V         &kp B            &kp N        &kp M       &kp P    &kp Q  &kp DOT   &none
+&gresc   &none   &kp W  &kp E      &kp R         &kp T        &kp Y        &kp U       &kp I    &kp O  &none     &none
+&lt 3 Z  &kp A   &kp S  &kp D      &kp F         &kp G        &kp H        &kp J       &kp K    &kp L  &kp SEMI  &kp LSHFT
+&none    &gresc  &kp X  &kp C      &kp V         &kp B        &kp N        &kp M       &kp P    &kp Q  &kp DOT   &none
                         &kp COMMA  &mt LGUI ESC  &lt 3 RET    &lt 2 SPACE  &lt 1 BSPC  &kp DOT
             >;
         };
@@ -34,12 +34,11 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none     &kp STAR          &kp BACKSLASH     &kp LBRC          &kp RBRC          &none  &none
-&none  &none  &kp DOLLAR  &kp PERCENT  &kp CARET  &none     &kp LS(LA(LEFT))  &kp MINUS         &kp PLUS          &kp LS(LA(RIGHT)) &none  &none
-&none  &none  &kp LC(M)  &kp LC(M)  &kp LC(Q)  &none     &kp EQUAL         &kp LS(BACKSLASH) &kp LS(LBRC)      &kp LS(RBRC)      &none  &none
-                     &none  &none  &trans    &trans            &none             &none
+&none  &none  &none       &none        &none      &none     &kp STAR          &kp BACKSLASH      &kp LBRC      &kp RBRC           &none  &none
+&none  &none  &kp DOLLAR  &kp PERCENT  &kp CARET  &none     &kp LS(LA(LEFT))  &kp MINUS          &kp PLUS      &kp LS(LA(RIGHT))  &none  &none
+&none  &none  &kp LC(M)   &kp LC(M)    &kp LC(Q)  &none     &kp EQUAL         &kp LS(BACKSLASH)  &kp LS(LBRC)  &kp LS(RBRC)       &none  &none
+                          &none        &none      &trans    &trans            &none              &none
             >;
         };
-
     };
 };
