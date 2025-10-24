@@ -7,37 +7,37 @@
 
         default_layer {
             bindings = <
-                &none     &none     &kp W     &kp E     &kp R     &kp T        &kp Y     &kp U     &kp I     &kp O     &none     &none
-                &lt 3 Z   &kp A     &kp S     &kp D     &kp F     &kp G        &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp LSHFT
-                &none     &none     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M     &kp P     &kp Q     &kp DOT   &none
-                          &kp COMMA &mt LGUI ESC &mt LCTRL RET                &lt 2 SPACE &lt 1 BSPC &kp DOT
+&caps_word  &none  &kp W  &kp E      &kp R         &kp T            &kp Y        &kp U       &kp I    &kp O  &none     &none
+&lt 3 Z     &kp A  &kp S  &kp D      &kp F         &kp G            &kp H        &kp J       &kp K    &kp L  &kp SEMI  &kp LSHFT
+&none       &none  &kp X  &kp C      &kp V         &kp B            &kp N        &kp M       &kp P    &kp Q  &kp DOT   &none
+                          &kp COMMA  &mt LGUI ESC  &mt LCTRL RET    &lt 2 SPACE  &lt 1 BSPC  &kp DOT
             >;
         };
 
         layer_1 {
             bindings = <
-                &none     &none     &kp KP_N7 &kp KP_N8 &kp KP_N9 &none        &kp LS(TAB) &kp HASH &kp AT   &kp TAB   &none     &none
-                &none     &kp STAR  &kp KP_N4 &kp KP_N5 &kp KP_N6 &none        &kp LEFT    &kp DOWN &kp UP   &kp RIGHT &kp UNDER &none
-                &none     &none     &kp KP_N1 &kp KP_N2 &kp KP_N3 &none        &kp GRAVE   &kp LT   &kp GT   &none     &none     &none
-                          &none     &kp KP_N0 &kp LG(RET)                      &none       &none    &none
+&none  &none     &kp KP_N7  &kp KP_N8  &kp KP_N9  &none          &kp LS(TAB)  &kp HASH  &kp AT  &kp TAB    &none      &none
+&none  &kp STAR  &kp KP_N4  &kp KP_N5  &kp KP_N6  &none          &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp UNDER  &none
+&none  &none     &kp KP_N1  &kp KP_N2  &kp KP_N3  &none          &kp GRAVE    &kp LT    &kp GT  &none      &none      &none
+                            &none      &kp KP_N0  &kp LG(RET)    &none        &none     &none
             >;
         };
 
         layer_2 {
             bindings = <
-                &none     &none     &none     &none     &none     &kp LG(T)    &kp EXCL    &kp SQT  &kp DQT   &kp QMARK &none     &none
-                &none     &none     &none     &none     &none     &none        &kp LA(LEFT) &kp LA(J) &kp LA(K) &kp LA(RIGHT) &kp UNDER &none
-                &none     &none     &none     &none     &none     &none        &kp GRAVE   &none    &none     &none     &none     &none
-                          &none     &none     &none                            &trans      &none    &none
+&none  &none  &none  &none  &none  &kp LG(T)    &kp EXCL      &kp SQT    &kp DQT    &kp QMARK      &none      &none
+&none  &none  &none  &none  &none  &none        &kp LA(LEFT)  &kp LA(J)  &kp LA(K)  &kp LA(RIGHT)  &kp UNDER  &none
+&none  &none  &none  &none  &none  &none        &kp GRAVE     &none      &none      &none          &none      &none
+                     &none  &none  &none        &trans        &none      &none
             >;
         };
 
         layer_3 {
             bindings = <
-                &none     &none     &none     &none     &none     &none        &none       &none    &none     &none     &none     &none
-                &none     &none     &none     &none     &none     &none        &kp LS(LA(LEFT)) &kp LS(LA(DOWN)) &kp LS(LA(UP)) &kp LS(LA(RIGHT)) &none &none
-                &none     &none     &none     &none     &none     &none        &none       &none    &none     &none     &none     &none
-                          &none     &none     &trans                           &trans      &none    &none
+&none  &none  &none  &none  &none  &none     &none             &none             &none           &none              &none  &none
+&none  &none  &none  &none  &none  &none     &kp LS(LA(LEFT))  &kp LS(LA(DOWN))  &kp LS(LA(UP))  &kp LS(LA(RIGHT))  &none  &none
+&none  &none  &none  &none  &none  &none     &none             &none             &none           &none              &none  &none
+                     &none  &none  &trans    &trans            &none             &none
             >;
         };
     };
