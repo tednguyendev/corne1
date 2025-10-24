@@ -26,7 +26,7 @@
 layer_2 {
     bindings = <
 &none  &none         &kp LS(LG(P))  &kp LS(LG(E))  &kp LS(LG(O))   &kp LG(T)       &kp EXCL      &kp SQT       &kp DQT       &kp QMARK      &none      &none
-&kp LS(LG(I)) &kp LS(LG(X)) &kp LS(LG(Q))  &kp LS(LG(S))  &kp LS(LG(A))   LS(LG(0))           &kp LA(LEFT)  &kp LA(J)     &kp LA(K)     &kp LA(RIGHT)  &kp UNDER  &none
+&kp LS(LG(I)) &kp LS(LG(X)) &kp LS(LG(Q))  &kp LS(LG(S))  &kp LS(LG(A))  &kp LS(LG(0))           &kp LA(LEFT)  &kp LA(J)     &kp LA(K)     &kp LA(RIGHT)  &kp UNDER  &none
 &none  &kp LS(LG(Y)) &kp LS(LG(N1)) &kp LS(LG(C))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp GRAVE     &none         &none         &none          &none      &none
                                     &none          &none           &none           &trans        &none         &none
     >;
