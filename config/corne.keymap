@@ -48,18 +48,18 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none       &none        &none      &none     &kp AMPERSAND     &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none
-&none  &none  &kp DOLLAR  &kp PERCENT  &kp CARET  &none     &kp LS(LA(LEFT))  &kp MINUS          &kp PLUS          &kp LS(LA(RIGHT))  &kp STAR  &none
-&none  &none  &kp LC(M)   &kp LC(M)    &kp LC(Q)  &none     &kp PIPE          &kp LS(BACKSLASH)  &kp LS(LBRC)      &kp LS(RBRC)       &none     &none
+&none  &none  &none       &none        &none      &none     &none     &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none
+&none  &none  &kp DOLLAR  &none  &none  &none     &kp LS(LA(LEFT))  &kp MINUS          &kp PLUS          &kp LS(LA(RIGHT))  &kp STAR  &none
+&none  &none  &none       &none        &none      &none     &kp PIPE          &kp LS(BACKSLASH)  &kp LS(LBRC)      &kp LS(RBRC)       &none     &none
                           &none        &none      &trans    &trans            &none              &none
             >;
         };
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none       &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
-&none  &none  &none  &none  &none  &none    &none       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
-&none  &none  &none  &none  &none  &none    &none       &kp GRAVE         &kp GT             &kp LT     &none            &none
+&none  &none  &none  &none  &none  &none    &kp LC(M)   &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
+&none  &none  &none  &none  &none  &none    &kp LC(M)   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
+&none  &none  &none  &none  &none  &none    &kp LC(Q)   &kp GRAVE         &kp GT             &kp LT     &none            &none
                      &none  &none  &none    &kp DOLLAR  &kp PERCENT       &kp CARET
             >;
         };
