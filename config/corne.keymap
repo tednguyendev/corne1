@@ -21,9 +21,9 @@
 
         default_layer {
             bindings = <
-&caps_word  &none   &kp W  &kp E      &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none     &none
-&lt 3 Z     &kp A   &kp S  &kp D      &kp F         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp SEMI  &kp LSHFT
-&none       &gresc  &kp X  &kp C      &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp DOT   &none
+&caps_word  &none   &kp W  &kp E        &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none     &none
+&lt 3 Z     &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp SEMI  &kp LSHFT
+&none       &gresc  &kp X  &kp C        &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp DOT   &none
                            &lt 4 COMMA  &mt LGUI ESC  &lt 3 RET    &lt_repeat 1 BACKSPACE  &lt_repeat 2 SPACE  &kp DOT
             >;
         };
@@ -55,14 +55,13 @@
             >;
         };
 
-          layer_4 {
-              bindings = <
-  &none  &none  &none  &none  &none  &none    &kp DOLLAR  &kp SQT   &kp HASH  &kp EQUAL  &none  &none
-  &none  &none  &none  &none  &none  &none    &kp PERCENT  &kp DQT   &kp EXCL  &kp QMARK  &none  &none
-  &none  &none  &none  &none  &none  &none    &kp CARET   &kp GRAVE &kp GT    &kp LT     &none  &none
-                       &none  &none  &none    &none       &none     &none
-              >;
-          };
-
+        layer_4 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &kp DOLLAR   &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
+&none  &none  &none  &none  &none  &none    &kp PERCENT  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
+&none  &none  &none  &none  &none  &none    &kp CARET    &kp GRAVE         &kp GT             &kp LT     &none            &none
+                     &none  &none  &none    &none        &none             &none
+            >;
+        };
     };
 };
