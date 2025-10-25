@@ -57,10 +57,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp DOLLAR   &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
-&none  &none  &none  &none  &none  &none    &kp PERCENT  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
-&none  &none  &none  &none  &none  &none    &kp CARET    &kp GRAVE         &kp GT             &kp LT     &none            &none
-                     &none  &none  &none    &none        &none             &none
+&none  &none  &none  &none  &none  &none    &none       &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
+&none  &none  &none  &none  &none  &none    &none       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
+&none  &none  &none  &none  &none  &none    &none       &kp GRAVE         &kp GT             &kp LT     &none            &none
+                     &none  &none  &none    &kp DOLLAR  &kp PERCENT       &kp CARET
             >;
         };
     };
