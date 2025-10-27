@@ -25,7 +25,7 @@
         default_layer {
             bindings = <
 &caps_word  &none   &kp W  &kp E        &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none      &none
-&kp Z       &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp SEMI   &kp LSHFT
+&kp Z       &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp COLON  &kp LSHFT
 &none       &gresc  &kp X  &kp C        &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp SLASH  &none
                            &lt 1 COMMA  &mt LGUI ESC  &lt 2 RET    &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
             >;
@@ -34,7 +34,7 @@
         layer_1 {
             bindings = <
 &none  &none  &none          &kp C_VOLUME_UP  &kp LG(PLUS)   &none        &none       &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
-&none  &none  &kp LC(SPACE)  &kp C_VOL_DN     &kp LG(MINUS)  &none        &none       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
+&none  &none  &kp LC(SPACE)  &kp C_VOL_DN     &kp LG(MINUS)  &none        &kp SEMI    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
 &none  &none  &kp LC(M)      &kp LC(N)        &kp LC(Q)      &kp LC(P)    &none       &kp GRAVE         &kp GT             &kp LT     &none            &none
                              &none            &none          &none        &kp DOLLAR  &kp PERCENT       &kp CARET
             >;
