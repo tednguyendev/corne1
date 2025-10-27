@@ -33,10 +33,10 @@
 
         layer_1 {
             bindings = <
-&none  &none  &none  &kp C_VOLUME_UP  &kp LG(PLUS)   &none    &kp LC(M)   &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
-&none  &none  &none  &kp C_VOL_UP     &kp LG(MINUS)  &none    &kp LC(N)   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
-&none  &none  &none  &none            &none          &none    &kp LC(Q)   &kp GRAVE         &kp GT             &kp LT     &none            &none
-                     &none            &none          &none    &kp DOLLAR  &kp PERCENT       &kp CARET
+&none  &none  &none      &kp C_VOLUME_UP  &kp LG(PLUS)   &none    &none       &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
+&none  &none  &none      &kp C_VOL_UP     &kp LG(MINUS)  &none    &kp SLASH   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
+&none  &none  &kp LC(M)  &kp LC(N)        &kp LC(Q)      &none    &none       &kp GRAVE         &kp GT             &kp LT     &none            &none
+                         &none            &none          &none    &kp DOLLAR  &kp PERCENT       &kp CARET
             >;
         };
 
@@ -66,8 +66,5 @@
                                               &kp LS(LG(Y))  &kp LS(LG(N4))  &kp LS(LG(O))    &trans        &none      &none
             >;
         };
-
-
-
     };
 };
