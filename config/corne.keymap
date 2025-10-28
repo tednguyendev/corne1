@@ -69,9 +69,9 @@
 
         layer_5 {
             bindings = <
-&tog 5  &none   &kp W  &kp E        &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none      &none
-&kp Z   &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp DOWN            &kp K    &kp L  &kp COLON  &kp LSHFT
-&none   &gresc  &kp X  &kp C        &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp SLASH  &none
+&tog 5  &none   &kp W  &kp E        &kp R         &kp T        &kp Y                   &kp U               &kp I         &kp O  &none      &none
+&kp Z   &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp DOWN            &kp UP_ARROW  &kp L  &kp COLON  &kp LSHFT
+&none   &gresc  &kp X  &kp C        &kp V         &kp B        &kp N                   &kp M               &kp P         &kp Q  &kp SLASH  &none
                        &lt 1 COMMA  &mt LGUI ESC  &lt 2 RET    &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
             >;
         };
