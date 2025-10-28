@@ -17,6 +17,27 @@
 
             hold-trigger-on-release;
         };
+
+        cmd_remap_d: cmd_remap_d {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp LC(C)>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        cmd_remap_f: cmd_remap_f {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp LC(V)>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        cmd_remap_s: cmd_remap_s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp LC(X)>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -25,7 +46,7 @@
         default_layer {
             bindings = <
 &tog 5  &none   &kp W  &kp E        &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none      &none
-&kp Z   &kp A   &kp S  &kp D        &kp F         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp COLON  &kp LSHFT
+&kp Z   &kp A   &cmd_remap_s  &cmd_remap_d        &cmd_remap_f         &kp G        &kp H                   &kp J               &kp K    &kp L  &kp COLON  &kp LSHFT
 &none   &gresc  &kp X  &kp C        &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp SLASH  &none
                        &lt 1 COMMA  &mt LGUI ESC  &lt 2 RET    &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
             >;
@@ -70,7 +91,7 @@
         layer_5 {
             bindings = <
 &tog 5  &none   &kp W  &kp E     &kp R         &kp T        &kp Y                   &kp U     &kp I         &kp O      &none      &none
-&kp Z   &kp A   &kp S  &kp D     &kp F         &kp G        &kp LEFT                &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp COLON  &kp LSHFT
+&kp Z   &kp A   &cmd_remap_s  &cmd_remap_d     &cmd_remap_f         &kp G        &kp LEFT                &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp COLON  &kp LSHFT
 &none   &gresc  &kp X  &kp C     &kp V         &kp B        &kp N                   &kp M     &kp P         &kp Q      &kp SLASH  &none
                        &kp DOWN  &kp UP_ARROW  &lt 2 RET    &lt_repeat 3 BACKSPACE  &kp DOWN  &kp UP_ARROW
             >;
