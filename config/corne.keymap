@@ -21,7 +21,7 @@
         cmd_remap_d: cmd_remap_d {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp D>, <&kp LC(C)>;
+            bindings = <&kp D>, <&kp LG(C)>;
 
             mods = <(MOD_LGUI)>;
         };
@@ -29,7 +29,7 @@
         cmd_remap_f: cmd_remap_f {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp F>, <&kp LC(V)>;
+            bindings = <&kp F>, <&kp LG(V)>;
 
             mods = <(MOD_LGUI)>;
         };
@@ -37,7 +37,23 @@
         cmd_remap_s: cmd_remap_s {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp S>, <&kp LC(X)>;
+            bindings = <&kp S>, <&kp LG(X)>;
+
+            mods = <(MOD_LGUI)>;
+        };
+
+        cmd_remap_g: cmd_remap_g {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp LG(F)>;
+
+            mods = <(MOD_LGUI)>;
+        };
+
+        cmd_remap_colon: cmd_remap_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp LC(C)>;
 
             mods = <(MOD_LGUI)>;
         };
@@ -48,9 +64,9 @@
 
         default_layer {
             bindings = <
-&tog 5  &none   &kp W         &kp E         &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none      &none
-&kp Z   &kp A   &cmd_remap_s  &cmd_remap_d  &cmd_remap_f  &kp G        &kp H                   &kp J               &kp K    &kp L  &kp COLON  &kp LSHFT
-&none   &gresc  &kp X         &kp C         &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp SLASH  &none
+&tog 5  &none   &kp W         &kp E         &kp R         &kp T        &kp Y                   &kp U               &kp I    &kp O  &none              &none
+&kp Z   &kp A   &cmd_remap_s  &cmd_remap_d  &cmd_remap_f  &cmd_remap_g &kp H                   &kp J               &kp K    &kp L  &cmd_remap_colon   &kp LSHFT
+&none   &gresc  &kp X         &kp C         &kp V         &kp B        &kp N                   &kp M               &kp P    &kp Q  &kp SLASH          &none
                               &lt 1 COMMA   &mt LGUI ESC  &lt 2 RET    &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
             >;
         };
@@ -91,13 +107,14 @@
             >;
         };
 
-        layer_5 {
-            bindings = <
-&tog 5  &none   &kp W         &kp E         &kp R         &kp T        &kp Y                   &kp U     &kp I         &kp O      &none      &none
-&kp Z   &kp A   &cmd_remap_s  &cmd_remap_d  &cmd_remap_f  &kp G        &kp LEFT                &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp COLON  &kp LSHFT
-&none   &gresc  &kp X         &kp C         &kp V         &kp B        &kp N                   &kp M     &kp P         &kp Q      &kp SLASH  &none
-                              &kp DOWN      &kp UP_ARROW  &lt 2 RET    &lt_repeat 3 BACKSPACE  &kp DOWN  &kp UP_ARROW
-            >;
-        };
+layer_5 {
+    bindings = <
+&tog 5  &none  &none  &none  &none  &none    &none  &none  &none         &none      &none  &none
+&none   &none  &none  &none  &none  &none    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none   &none  &none  &none  &none  &none    &none  &none  &none         &none      &none  &none
+                     &kp DOWN  &kp UP_ARROW  &none    &none  &kp DOWN  &kp UP_ARROW
+    >;
+};
+
     };
 };
