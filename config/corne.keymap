@@ -112,21 +112,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-MAC {
-    bindings = <
-&tog 5  &none  &none  &none     &none         &none    &none     &none         &none         &none      &none  &none
-&kp Z              &kp A   &cmd_remap_s  &cmd_remap_d         &cmd_remap_f  &cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &cmd_remap_colon  &kp LSHFT
-&none              &gresc  &kp X         &kp C                &kp V         &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH         &none
-                                         &lt 1 COMMA          &mt LGUI ESC  &lt 2 RET       &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
-    >;
-};
+        MAC {
+            bindings = <
+&tog 5             &kp A   &cmd_remap_s  &cmd_remap_d         &cmd_remap_f  &cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &cmd_remap_colon  &kp LSHFT
+&kp Z              &gresc  &kp X         &kp C                &kp V         &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH         &none
+&to 5                                    &lt 1 COMMA          &mt LGUI ESC  &lt 2 RET       &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
+            >;
+        };
 
         layer_1 {
             bindings = <
 &none  &none  &kp C_MUTE     &kp C_VOLUME_UP  &kp LG(PLUS)   &none        &kp BACKSLASH  &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
 &none  &none  &kp LC(SPACE)  &kp C_VOL_DN     &kp LG(MINUS)  &none        &kp SEMI       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
 &none  &none  &kp LC(M)      &kp LC(N)        &kp LC(Q)      &kp LC(P)    &kp TILDE      &kp GRAVE         &kp GT             &kp LT     &none            &none
-                             &none            &none          &none        &kp DOLLAR     &kp PERCENT       &kp CARET
+                              &none            &none          &none        &kp DOLLAR     &kp PERCENT       &kp CARET
             >;
         };
 
@@ -161,18 +160,19 @@ MAC {
             bindings = <
 &mac_linux_toggle  &none   &kp W                  &linux_cmd_remap_e         &kp R                    &kp T           &kp Y                   &kp U               &kp I    &kp O  &none                      &none
 &kp Z              &kp A   &linux_cmd_remap_s     &linux_cmd_remap_d         &linux_cmd_remap_f       &linux_cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &linux_cmd_remap_colon     &kp LSHFT
-&none              &gresc  &kp X                  &kp C                      &kp V                    &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH                  &none
+&to 0              &gresc  &kp X                  &kp C                      &kp V                    &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH                  &none
                                                   &lt 1 COMMA                &mt LGUI ESC             &lt 2 RET       &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
             >;
         };
 
-        layer_5 {
+        layer_6 {
             bindings = <
-&tog 5  &none  &none  &none     &none         &none    &none     &none         &none         &none      &none  &none
+&tog 6  &none  &none  &none     &none         &none    &none     &none         &none         &none      &none  &none
 &none   &none  &none  &none     &none         &none    &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &none  &none
 &none   &none  &none  &none     &none         &none    &none     &none         &none         &none      &none  &kp UP_ARROW
                       &kp DOWN  &kp UP_ARROW  &none    &kp DOWN  &kp UP_ARROW  &kp UP_ARROW
             >;
         };
+
     };
 };
