@@ -5,64 +5,72 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        lt_repeat: layer_tap_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <120>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&mo>, <&kp>;
-
-            hold-trigger-on-release;
-        };
-
-cmd_remap_e: cmd_remap_e {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp E>, <&kp LG(W)>;
-    mods = <(MOD_LGUI)>;
-};
-
-cmd_remap_d: cmd_remap_d {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp D>, <&kp LG(C)>;
-    mods = <(MOD_LGUI|MOD_LCTL)>;
-};
-
-cmd_remap_f: cmd_remap_f {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp F>, <&kp LG(V)>;
-    mods = <(MOD_LGUI|MOD_LCTL)>;
-};
-
-        cmd_remap_s: cmd_remap_s {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&kp LG(X)>;
-
-            mods = <(MOD_LGUI)>;
-        };
-
-        cmd_remap_g: cmd_remap_g {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp G>, <&kp LG(F)>;
-
-            mods = <(MOD_LGUI)>;
-        };
-
-        cmd_remap_colon: cmd_remap_colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp LC(C)>;
-
-            mods = <(MOD_LGUI)>;
-        };
+behaviors {
+    lt_repeat: layer_tap_repeat {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <120>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <150>;
+        bindings = <&mo>, <&kp>;
+        hold-trigger-on-release;
     };
+
+    copy_macro: copy_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(C)>, <&kp LC(C)>;
+    };
+
+    paste_macro: paste_macro {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(V)>, <&kp LC(V)>;
+    };
+
+    cmd_remap_e: cmd_remap_e {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp E>, <&kp LG(W)>;
+        mods = <(MOD_LGUI)>;
+    };
+
+    cmd_remap_d: cmd_remap_d {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp D>, <&copy_macro>;
+        mods = <(MOD_LGUI|MOD_LCTL)>;
+    };
+
+    cmd_remap_f: cmd_remap_f {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp F>, <&paste_macro>;
+        mods = <(MOD_LGUI|MOD_LCTL)>;
+    };
+
+    cmd_remap_s: cmd_remap_s {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp S>, <&kp LG(X)>;
+        mods = <(MOD_LGUI)>;
+    };
+
+    cmd_remap_g: cmd_remap_g {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp G>, <&kp LG(F)>;
+        mods = <(MOD_LGUI)>;
+    };
+
+    cmd_remap_colon: cmd_remap_colon {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp COLON>, <&kp LC(C)>;
+        mods = <(MOD_LGUI)>;
+    };
+};
 
     keymap {
         compatible = "zmk,keymap";
