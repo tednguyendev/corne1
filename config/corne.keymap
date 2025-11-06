@@ -25,21 +25,19 @@ cmd_remap_e: cmd_remap_e {
     mods = <(MOD_LGUI)>;
 };
 
-        cmd_remap_d: cmd_remap_d {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&kp LG(C)>;
+cmd_remap_d: cmd_remap_d {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp D>, <&kp LG(C)>;
+    mods = <(MOD_LGUI|MOD_LCTL)>;
+};
 
-            mods = <(MOD_LGUI)>;
-        };
-
-        cmd_remap_f: cmd_remap_f {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp F>, <&kp LG(V)>;
-
-            mods = <(MOD_LGUI)>;
-        };
+cmd_remap_f: cmd_remap_f {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp F>, <&kp LG(V)>;
+    mods = <(MOD_LGUI|MOD_LCTL)>;
+};
 
         cmd_remap_s: cmd_remap_s {
             compatible = "zmk,behavior-mod-morph";
