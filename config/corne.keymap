@@ -112,13 +112,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        MAC {
+MAC {
+    bindings = <
 &tog 5  &none  &none  &none     &none         &none    &none     &none         &none         &none      &none  &none
 &kp Z              &kp A   &cmd_remap_s  &cmd_remap_d         &cmd_remap_f  &cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &cmd_remap_colon  &kp LSHFT
 &none              &gresc  &kp X         &kp C                &kp V         &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH         &none
                                          &lt 1 COMMA          &mt LGUI ESC  &lt 2 RET       &lt_repeat 3 BACKSPACE  &lt_repeat 4 SPACE  &kp DOT
-            >;
-        };
+    >;
+};
 
         layer_1 {
             bindings = <
