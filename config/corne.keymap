@@ -18,13 +18,6 @@
             hold-trigger-on-release;
         };
 
-        mac_linux_toggle: mac_linux_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&to 5>, <&to 0>;
-        };
-
         cmd_remap_e: cmd_remap_e {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -77,49 +70,42 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp LC(W)>;
-
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         linux_cmd_remap_d: linux_cmd_remap_d {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp LC(C)>;
-
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         linux_cmd_remap_f: linux_cmd_remap_f {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp LC(V)>;
-
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         linux_cmd_remap_s: linux_cmd_remap_s {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp LC(X)>;
-
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         linux_cmd_remap_g: linux_cmd_remap_g {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp LC(F)>;
-
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         linux_cmd_remap_colon: linux_cmd_remap_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp LC(C)>;
-
-            mods = <(MOD_LCTL)>;
-        };
+            mods = <(MOD_LGUI)>;
     };
 
     keymap {
