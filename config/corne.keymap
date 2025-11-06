@@ -106,6 +106,7 @@
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp LC(C)>;
             mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
