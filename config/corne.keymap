@@ -66,6 +66,14 @@
             mods = <(MOD_LGUI)>;
         };
 
+        cmd_remap_slash: cmd_remap_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp LC(SPACE)>;
+
+            mods = <(MOD_LGUI)>;
+        };
+
         linux_cmd_remap_e: linux_cmd_remap_e {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -116,7 +124,7 @@
             bindings = <
 &tog 6  &none   &kp W         &cmd_remap_e  &kp R         &kp T           &kp Y                   &kp U               &kp I    &kp O  &none             &none
 &kp Z   &kp A   &cmd_remap_s  &cmd_remap_d  &cmd_remap_f  &cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &cmd_remap_colon  &kp LSHFT
-&to 1   &gresc  &kp X         &kp C         &kp V         &kp B           &kp N                   &kp M               &kp P    &kp Q  &kp SLASH         &none
+&to 1   &gresc  &kp X         &kp C         &kp V         &kp B           &kp N                   &kp M               &kp P    &kp Q  &cmd_remap_slash  &none
                               &lt 2 COMMA   &mt LGUI ESC  &lt 3 RET       &lt_repeat 4 BACKSPACE  &lt_repeat 5 SPACE  &kp DOT
             >;
         };
