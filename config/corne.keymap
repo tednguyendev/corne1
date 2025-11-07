@@ -132,7 +132,7 @@
         LINUX {
             bindings = <
 &tog 6  &none   &kp W               &linux_cmd_remap_e  &kp R               &kp T                 &kp Y                   &kp U               &kp I    &kp O  &none                   &none
-&kp Z   &kp A   &linux_cmd_remap_s  &linux_cmd_remap_d  &linux_cmd_remap_f  &linux_cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &linux_cmd_remap_colon  &kp LSHFT
+&kp Z   &kp A   &linux_cmd_remap_s  &linux_cmd_remap_d  &linux_cmd_remap_f  &linux_cmd_remap_g    &kp H                   &kp J               &kp K    &kp L  &kp COLON &kp LSHFT
 &to 0   &gresc  &kp X               &kp C               &kp V               &kp B                 &kp N                   &kp M               &kp P    &kp Q  &kp SLASH               &none
                                     &lt 2 COMMA         &mt LGUI ESC        &lt 3 RET             &lt_repeat 4 BACKSPACE  &lt_repeat 5 SPACE  &kp DOT
             >;
