@@ -61,7 +61,7 @@
         cmd_remap_colon: cmd_remap_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp LG(C)>;
+            bindings = <&kp COLON>, <&kp LC(C)>;
 
             mods = <(MOD_LGUI)>;
         };
