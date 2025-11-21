@@ -78,6 +78,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp LC(W)>;
+
             mods = <(MOD_LGUI)>;
         };
 
@@ -85,6 +86,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp LC(C)>;
+
             mods = <(MOD_LGUI)>;
         };
 
@@ -92,6 +94,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp LC(V)>;
+
             mods = <(MOD_LGUI)>;
         };
 
@@ -99,6 +102,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp LC(X)>;
+
             mods = <(MOD_LGUI)>;
         };
 
@@ -106,6 +110,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp LC(F)>;
+
             mods = <(MOD_LGUI)>;
         };
 
@@ -113,6 +118,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp LC(G)>;
+
             mods = <(MOD_LGUI)>;
         };
     };
@@ -140,9 +146,9 @@
 
         layer_2 {
             bindings = <
-&none  &none  &kp C_MUTE     &kp C_VOLUME_UP  &kp LG(PLUS)   &none        &kp BACKSLASH  &kp AT_SIGN       &kp HASH           &kp EQUAL  &none            &none
-&none  &none  &kp LC(SPACE)  &kp C_VOL_DN     &kp LG(MINUS)  &none        &kp SEMI       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK  &kp EXCLAMATION  &none
-&none  &none  &kp LC(M)      &kp LC(N)        &kp LC(Q)      &kp LC(P)    &kp TILDE      &kp GRAVE         &kp GT             &kp LT     &none            &none
+&none  &none  &kp C_MUTE     &kp C_VOLUME_UP  &kp LG(PLUS)   &none        &kp BACKSLASH  &kp AT_SIGN       &kp HASH           &kp EQUAL         &none            &none
+&none  &none  &kp LC(SPACE)  &kp C_VOL_DN     &kp LG(MINUS)  &none        &kp SEMI       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp QMARK         &kp EXCLAMATION  &none
+&none  &none  &kp LC(M)      &kp LC(N)        &kp LC(Q)      &kp LC(P)    &kp TILDE      &kp GRAVE         &kp LESS_THAN      &kp GREATER_THAN  &none            &none
                              &none            &none          &none        &kp DOLLAR     &kp PERCENT       &kp CARET
             >;
         };
@@ -169,7 +175,7 @@
             bindings = <
 &none          &none          &kp LS(LG(P))   &kp LS(LG(E))  &kp LS(LG(N2))  &kp LG(T)        &none         &kp LS(TAB)  &kp TAB    &none          &none      &none
 &kp LS(LG(I))  &kp LS(LG(X))  &kp LS(LG(Q))   &kp LS(LG(S))  &kp LS(LG(A))   &kp LC(Y)        &kp LA(LEFT)  &kp LA(J)    &kp LA(K)  &kp LA(RIGHT)  &kp LC(C)  &none
-&none          &none          &kp LS(LG(N1))  &kp LS(LG(C))  &kp LS(LG(N3))  &none            &none         &none        &none      &none          &none      &none
+&none          &none          &kp LS(LG(N1))  &kp LS(LG(C))  &kp LS(LG(N3))  &kp LC(H)        &none         &none        &none      &none          &none      &none
                                               &kp LS(LG(Y))  &kp LS(LG(N4))  &kp LS(LG(O))    &trans        &none        &none
             >;
         };
